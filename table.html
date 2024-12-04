@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Академическая мобильность НИУ ВШЭ</title>
+    <!-- Подключение шрифта Montserrat -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Подключение Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: url('background.jpg') no-repeat center center fixed;
+            background-size: cover;
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+        }
+        
+        /* Стили для таблицы и ячеек */
+        table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 15px;
+            background-color: rgb(243, 243, 243);
+            border: 2px solid rgb(255, 117, 117);
+            text-align: center;
+        }
+        
+        td {
+            border: 2px solid rgb(255, 117, 117);
+            padding: 10px;
+            vertical-align: top;
+        }
+
+        /* Стили для ячеек */
+        .logo-cell {
+            width: 150px;
+            text-align: center;
+        }
+
+        .menu-cell {
+            background-color: rgb(203, 236, 194);
+            padding: 15px;
+            text-align: left;
+        }
+
+        .info-cell {
+            background: url('background-image.jpg') no-repeat center center;
+            background-size: cover;
+            padding: 15px;
+            color: rgb(0, 0, 0);
+            text-align: left;
+        }
+
+        .footer-cell {
+            background-color: lightgray;
+            text-align: left;
+            padding: 15px;
+        }
+
+        .inner-table td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <table>
+            <tr>
+                <!-- Логотип -->
+                <td class="logo-cell">
+                    <a href="HSE.jpg" target="_blank" onclick="window.open(this.href, '_blank', 'width=600,height=400'); return false;">
+                        <img src="Логотип_НИУ_ВШЭ.jpg" alt="Описание изображения" class="img-fluid" width="100">
+                    </a><br>
+                    <strong>НИУ ВШЭ</strong><br>Академическая мобильность
+                </td>
+
+                <!-- Меню -->
+                <td class="menu-cell">
+                    <h3><b>Разделы</b></h3>
+                    <p>Главная</p>
+                    <p>О программе</p>
+                    <p>Контакты</p>
+                </td>
+
+                <!-- Основная информация -->
+                <td class="info-cell">
+                    <h3>О программе</h3>
+                    <p>Программа академической мобильности в НИУ ВШЭ предлагает студентам возможность обучения за границей в ведущих университетах мира.</p>
+                    
+                    <table class="inner-table table">
+                        <tr>
+                            <td>Преимущества</td>
+                            <td>Документы</td>
+                        </tr>
+                        <tr>
+                            <td>- Международное обучение<br>- Языковые навыки</td>
+                            <td>- Заявка<br>- Рекомендации<br>- Тесты</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            
+            <!-- Подвал -->
+            <tr>
+                <td colspan="3" class="footer-cell">
+                    <h4>Контактная информация</h4>
+                    Email: mobility@hse.ru<br>
+                    Телефон: +7 (495) 123-45-67<br>
+                    Адрес: Москва, ул. Мясницкая, 20<br>
+                    Сайт: <a href="https://www.hse.ru/" target="_blank">https://www.hse.ru/</a>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- Подключение Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
